@@ -208,7 +208,7 @@ def add_contact(args, book: AddressBook):
     if len(args) != 2: # Check if the number of arguments is not equal to 2
         raise IndexError("Please enter a name and phone number.")
         # Raise an IndexError with the specified message
-    name, phone = args
+    name, phone = args # Unpack the arguments
     try: # Try to create a record with the name
         record = Record(name)  # Name validation occurs here
         record.add_phone(phone)  # Phone validation occurs here
